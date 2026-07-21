@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Break the Ice &mdash; SOLA &times; Everflo</title>
+<meta name="description" content="Case study: BREAK THE ICE — a 45-second AI brand film for SOLA sparkling water. The idea, the structure, the direction, and the campaign system behind it.">
+<meta property="og:title" content="Break the Ice — a 45s AI brand film by Everflo">
+<meta property="og:description" content="Sold as a thriller, paid off as a joke. How a story-driven AI commercial gets written, ruled and shot.">
+<meta property="og:image" content="https://everflo.studio/assets/bti/j-poster.jpg">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://everflo.studio/case-breaktheice.html">
+<link rel="icon" type="image/png" href="assets/everflo-favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WQB4X8T5');</script>
+<!-- End Google Tag Manager -->
+
+<style>
+  @font-face{font-family:'Outfit';font-style:normal;font-weight:300 700;font-display:swap;src:url(assets/bti/outfit-latin.woff2) format('woff2')}
+  :root{
+    --bg:#0A1422; --panel:#0F1D30; --panel2:#122238;
+    --ice:#EAF2F8; --dim:#8FA5BB; --faint:#5A7089;
+    --gold:#C9A227; --gold-bright:#E3BC3F;
+    --line:rgba(234,242,248,.09);
+    --col:1080px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ice);font-family:'Outfit',system-ui,sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+  img,video{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:var(--col);margin:0 auto;padding:0 24px}
+
+  /* nav */
+  nav{display:flex;align-items:center;justify-content:space-between;max-width:var(--col);margin:0 auto;padding:22px 24px}
+  .brand{font-weight:700;font-size:1.15rem;letter-spacing:.02em;text-decoration:none}
+  .brand span{color:var(--gold)}
+  .nav-meta{font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+  .nav-back{font-size:.85rem;color:var(--dim);text-decoration:none}
+  .nav-back:hover{color:var(--ice)}
+
+  /* type system */
+  .eyebrow{font-size:.75rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin:0 0 14px}
+  h1{font-weight:300;font-size:clamp(2.8rem,8vw,5.6rem);line-height:1.02;letter-spacing:-.015em;margin:0;text-wrap:balance}
+  h1 b{font-weight:600}
+  h2{font-weight:300;font-size:clamp(1.7rem,4vw,2.6rem);line-height:1.12;letter-spacing:-.01em;margin:0 0 14px;text-wrap:balance}
+  .lede{color:var(--dim);font-size:1.05rem;max-width:56ch;margin:0}
+  .cap{font-size:.85rem;color:var(--dim);line-height:1.5}
+  section{padding:84px 0;border-top:1px solid var(--line)}
+  section:first-of-type{border-top:0}
+
+  /* hero */
+  .hero{padding:56px 0 72px}
+  .hero-sub{color:var(--dim);font-size:1.1rem;max-width:52ch;margin:20px 0 0}
+  .hero-sub b{color:var(--ice);font-weight:600}
+  .film{margin-top:40px;border-radius:10px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.55);background:#000}
+  .film video{width:100%;aspect-ratio:16/9}
+  .film-meta{display:flex;gap:26px;flex-wrap:wrap;margin-top:16px;font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+
+  /* pun panels */
+  .puns{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+  .pun{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  .pun img{aspect-ratio:4/3;object-fit:cover;width:100%}
+  .pun .pad{padding:18px 20px 20px}
+  .pun h3{margin:0 0 6px;font-size:1.02rem;font-weight:600}
+  .pun .num{color:var(--gold);font-weight:600;margin-right:8px}
+  .pun p{margin:0;font-size:.88rem;color:var(--dim)}
+
+  /* story strip */
+  .curve{margin:40px 0 10px}
+  .curve svg{display:block;max-height:52px;width:100%}
+  .strip{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .strip figure{margin:0}
+  .strip img{aspect-ratio:16/9;object-fit:cover;width:100%;border-radius:8px}
+  .strip figcaption{font-size:.84rem;color:var(--dim);margin-top:9px;line-height:1.4}
+  .strip .fnum{color:var(--gold);font-weight:600;margin-right:5px}
+  .acts{display:grid;grid-template-columns:3fr 1fr 2fr;gap:10px;margin-top:22px}
+  .act{border-top:2px solid var(--gold);padding-top:10px;font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase}
+  .act small{display:block;letter-spacing:.02em;text-transform:none;font-weight:400;color:var(--dim);font-size:.82rem;margin-top:4px}
+  .foot-note{margin-top:34px;padding:18px 22px;background:var(--panel);border-left:2px solid var(--gold);border-radius:0 8px 8px 0;color:var(--dim);font-size:.95rem;max-width:70ch}
+  .foot-note b{color:var(--ice);font-weight:600}
+
+  /* craft cards */
+  .craft{display:grid;gap:26px;margin-top:44px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:26px;display:grid;gap:20px;grid-template-columns:1fr 1.6fr;align-items:center}
+  .card .txt h3{margin:0 0 8px;font-size:1.15rem;font-weight:600}
+  .card .txt p{margin:0;color:var(--dim);font-size:.92rem}
+  .duo{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .duo figure{margin:0}
+  .duo img{border-radius:8px;aspect-ratio:16/10;object-fit:cover;width:100%}
+  .duo figcaption{font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-top:8px}
+  .annot{position:relative;border-radius:8px;overflow:hidden}
+  .annot img{width:100%}
+  .tag{position:absolute;font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;background:rgba(10,20,34,.82);border:1px solid var(--gold);color:var(--ice);padding:5px 9px;border-radius:4px;backdrop-filter:blur(2px)}
+
+  /* campaign */
+  .endcard{border-radius:10px;overflow:hidden;margin-top:44px;box-shadow:0 20px 60px rgba(0,0,0,.45)}
+  .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}
+  .tiles figure{margin:0}
+  .tiles img{aspect-ratio:1/1;object-fit:cover;width:100%;border-radius:8px}
+  .tiles figcaption{font-size:.74rem;color:var(--faint);margin-top:7px}
+  .more{display:inline-block;margin-top:26px;font-size:.9rem;color:var(--gold);text-decoration:none;font-weight:600}
+  .more:hover{color:var(--gold-bright)}
+
+  /* resource */
+  .res{display:grid;grid-template-columns:1fr 1.15fr;gap:44px;align-items:center;margin-top:44px}
+  .res-doc{position:relative;border-radius:10px;overflow:hidden;max-height:420px;box-shadow:0 24px 60px rgba(0,0,0,.5);border:1px solid var(--line)}
+  .res-doc img{width:100%}
+  .res-doc::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,var(--bg) 100%)}
+  .res h3{margin:0 0 10px;font-size:1.5rem;font-weight:600}
+  .res p{color:var(--dim);font-size:.95rem;margin:0 0 6px}
+  .res ul{margin:14px 0 24px;padding:0;list-style:none;color:var(--dim);font-size:.92rem}
+  .res li{padding-left:20px;position:relative;margin-bottom:8px}
+  .res li::before{content:"";position:absolute;left:0;top:.55em;width:8px;height:2px;background:var(--gold)}
+  .gate{display:flex;gap:10px;flex-wrap:wrap}
+  .gate input{flex:1;min-width:220px;background:var(--panel2);border:1px solid var(--line);border-radius:999px;padding:13px 20px;color:var(--ice);font-family:inherit;font-size:.95rem}
+  .gate input::placeholder{color:var(--faint)}
+  .gate input:focus{outline:2px solid var(--gold);outline-offset:1px;border-color:transparent}
+  .gate button{background:var(--gold);color:#0A1422;border:0;border-radius:999px;padding:13px 26px;font-family:inherit;font-weight:600;font-size:.95rem;cursor:pointer}
+  .gate button:hover{background:var(--gold-bright)}
+  .gate button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+  .gate-note{font-size:.78rem;color:var(--faint);margin-top:12px}
+  .gate-done{display:none;background:var(--panel);border:1px solid var(--gold);border-radius:10px;padding:16px 20px;color:var(--ice);font-size:.95rem}
+  .gate-done b{color:var(--gold)}
+
+  /* cta */
+  .cta{text-align:center;padding:96px 0}
+  .cta h2{font-size:clamp(1.9rem,4.5vw,3rem)}
+  .cta p{color:var(--dim);max-width:46ch;margin:0 auto}
+  .btn{display:inline-block;margin-top:30px;background:var(--gold);color:#0A1422;font-weight:600;font-size:1rem;padding:15px 34px;border-radius:999px;text-decoration:none;letter-spacing:.01em}
+  .btn:hover{background:var(--gold-bright)}
+  footer{border-top:1px solid var(--line);padding:28px 0 44px;color:var(--faint);font-size:.82rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+  a:focus-visible,.btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  @media (max-width:880px){
+    .puns{grid-template-columns:1fr}
+    .pun img{aspect-ratio:16/8}
+    .strip{grid-template-columns:repeat(2,1fr)}
+    .acts{grid-template-columns:1fr;gap:14px}
+    .card{grid-template-columns:1fr}
+    .tiles{grid-template-columns:repeat(2,1fr)}
+    .res{grid-template-columns:1fr}
+    .res-doc{max-height:300px}
+  }
+</style>
+
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQB4X8T5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<nav>
+  <a class="brand" href="index.html">everflo<span>.</span></a>
+  <div class="nav-meta">Case Study &mdash; SOLA</div>
+  <a class="nav-back" href="index.html#work">&larr; All work</a>
+</nav>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">SOLA Sparkling Water &middot; 45-second brand film</p>
+    <h1>Break the <b>Ice.</b></h1>
+    <p class="hero-sub">A nature thriller for twenty seconds. A soft-drink ad for the rest. <b>Shot entirely with AI. Directed entirely by hand.</b></p>
+    <div class="film">
+      <video controls playsinline preload="metadata" poster="assets/bti/j-poster.jpg" src="assets/bti/breaktheice-45s.mp4"></video>
+    </div>
+    <div class="film-meta"><span>45s &middot; 16:9</span><span>Original spec brand</span><span>Concept &rarr; script &rarr; direction &rarr; edit: Everflo</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">The idea</p>
+    <h2>One title, three meanings.</h2>
+    <p class="lede">The title is the script. Every scene in the film exists to pay off one of its three readings.</p>
+    <div class="puns">
+      <div class="pun"><img src="assets/bti/j-f-pun-smash.jpg" alt="Polar bear smashing an ice ridge apart">
+        <div class="pad"><h3><span class="num">1</span>Break the ice, literally</h3><p>A polar bear smashes a frozen ridge apart with one blow.</p></div></div>
+      <div class="pun"><img src="assets/bti/j-f-pun-canpaw.jpg" alt="SOLA can held in a polar bear paw, frost still on the label">
+        <div class="pad"><h3><span class="num">2</span>The product device</h3><p>The prize inside: a can of SOLA, served ice-cold by nature itself.</p></div></div>
+      <div class="pun"><img src="assets/bti/j-f-s6-truth.jpg" alt="The bear and the fisherman sitting together, each drinking a SOLA">
+        <div class="pad"><h3><span class="num">3</span>The icebreaker</h3><p>Two strangers who got off on the wrong foot, sharing a drink.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">The structure</p>
+    <h2>Sold as a thriller. Paid off as a joke.</h2>
+    <p class="lede">Forty-five seconds built on one misdirection: the audience is shown a predator. They're actually watching a customer.</p>
+    <div class="curve">
+      <svg viewBox="0 0 1080 44" preserveAspectRatio="none" role="img" aria-label="Tension curve rising through the chase, peaking at the reveal, resolving into calm">
+        <path d="M10,38 C150,36 280,30 400,22 C480,16 530,9 585,6 C620,4 650,15 720,26 C820,36 960,39 1070,39" fill="none" stroke="#C9A227" stroke-width="1.5"/>
+        <circle cx="585" cy="6" r="3.5" fill="#C9A227"/>
+        <text x="602" y="11" fill="#8FA5BB" font-size="11" font-family="Outfit,sans-serif" letter-spacing="2">THE REVEAL</text>
+      </svg>
+    </div>
+    <div class="strip">
+      <figure><img src="assets/bti/j-f-s1-calm.jpg" alt="Fisherman alone on a frozen lake, overcast"><figcaption><span class="fnum">01</span>A quiet catch on a frozen lake.</figcaption></figure>
+      <figure><img src="assets/bti/j-f-s2-wrong.jpg" alt="A polar bear emerging from the fog"><figcaption><span class="fnum">02</span>Something in the fog.</figcaption></figure>
+      <figure><img src="assets/bti/j-f-s3-charge.jpg" alt="The bear leaping over the fallen fisherman"><figcaption><span class="fnum">03</span>The charge &mdash; straight over him.</figcaption></figure>
+      <figure><img src="assets/bti/j-f-s4-turn.jpg" alt="A SOLA can revealed among shattered ice between the bear's paws"><figcaption><span class="fnum">04</span>The prize was never him.</figcaption></figure>
+      <figure><img src="assets/bti/j-f-s5-sip.jpg" alt="The bear drinking the SOLA while the stunned fisherman watches"><figcaption><span class="fnum">05</span>Cracked open, ice-cold.</figcaption></figure>
+      <figure><img src="assets/bti/j-f-s6-truth.jpg" alt="Bear and fisherman side by side, sharing a drink"><figcaption><span class="fnum">06</span>Two strangers, one round.</figcaption></figure>
+    </div>
+    <div class="acts">
+      <div class="act">Act I &mdash; The Lie<small>Everything a horror film would do: fog, silence, a charge.</small></div>
+      <div class="act">Act II &mdash; The Turn<small>One smash flips the genre.</small></div>
+      <div class="act">Act III &mdash; The Truth<small>He just wanted a cold one.</small></div>
+    </div>
+    <p class="foot-note"><b>The product stays invisible until second 20.</b> No logo, no can, no brand color while the lie holds &mdash; restraint most AI video never attempts, and the reason the reveal lands.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">The craft</p>
+    <h2>AI is the camera. Direction is the product.</h2>
+    <p class="lede">Anyone can generate a bear. Keeping the same bear, the same man and the same geography across twelve shots &mdash; that's direction.</p>
+    <div class="craft">
+      <div class="card">
+        <div class="txt"><h3>Cast like a real shoot</h3><p>Four actors auditioned for the fisherman. The bear got a full character sheet &mdash; down to a notch scar on his left ear. One performer per role, held consistent through every shot in the film.</p></div>
+        <div class="duo">
+          <figure><img src="assets/bti/j-cast-man.jpg" alt="Fisherman character sheet: turnaround and expressions"><figcaption>The fisherman &mdash; cast A of 4</figcaption></figure>
+          <figure><img src="assets/bti/j-cast-bear.jpg" alt="Polar bear character sheet with identifying notch-scarred left ear"><figcaption>The bear &mdash; scar, coat, gait</figcaption></figure>
+        </div>
+      </div>
+      <div class="card">
+        <div class="txt"><h3>Light performs the story</h3><p>Overcast dread while the lie holds. The sun breaks exactly when the truth does. The weather is a character with an arc &mdash; planned in the script, not found in the render.</p></div>
+        <div class="duo">
+          <figure><img src="assets/bti/j-f-s1-calm.jpg" alt="Act one: flat overcast light on the frozen lake"><figcaption>Act I &mdash; overcast</figcaption></figure>
+          <figure><img src="assets/bti/j-f-sun.jpg" alt="Act three: golden sunlight as bear and man sit together"><figcaption>Act III &mdash; the sun breaks</figcaption></figure>
+        </div>
+      </div>
+      <div class="card">
+        <div class="txt"><h3>Written rules, every shot</h3><p>Scale anchors, locked screen direction, one action per cut, documentary light only. A written rulebook governs every generation &mdash; the discipline that makes twelve AI shots feel like one film.</p></div>
+        <div class="annot">
+          <img src="assets/bti/j-rule.jpg" alt="Low ice-level frame of the can sliding to the fisherman's boot, annotated with directing rules">
+          <span class="tag" style="left:4%;top:8%">Camera locked at can height</span>
+          <span class="tag" style="left:4%;bottom:10%">One vector: paw &rarr; boot, never reversed</span>
+          <span class="tag" style="right:4%;top:42%">Scale anchor: can = half a paw-width</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">The system</p>
+    <h2>One film becomes a campaign.</h2>
+    <p class="lede">Break the Ice is the flagship of a full brand system &mdash; same world, same rules, rebuilt for every format that sells.</p>
+    <div class="endcard"><img src="assets/bti/j-endcard.jpg" alt="Campaign end card: three SOLA flavours &mdash; Stay Cool. Stay Sola."></div>
+    <div class="tiles">
+      <figure><img src="assets/bti/j-hero1.jpg" alt="Hero film: SOLA can in a lifebuoy on a glacial lake"><figcaption>Hero film &mdash; the lifebuoy reveal</figcaption></figure>
+      <figure><img src="assets/bti/j-campaign-1x1-02-frozen-fresh.jpg" alt="Frozen Fresh social static: can inside a block of ice"><figcaption>Frozen Fresh &mdash; social trilogy</figcaption></figure>
+      <figure><img src="assets/bti/j-breakchill.jpg" alt="Break the Chill social static: a SOLA can punching through ice with a splash"><figcaption>Break the Chill</figcaption></figure>
+      <figure><img src="assets/bti/j-campaign-1x1-09-ice-vending-machine.jpg" alt="Ice vending machine carved from a glacier"><figcaption>Nature's vending machine</figcaption></figure>
+    </div>
+    <a class="more" href="case-sola.html">Explore the full SOLA campaign system &rarr;</a>
+  </div>
+</section>
+
+<section id="shotlist">
+  <div class="wrap">
+    <p class="eyebrow">Free resource</p>
+    <h2>Steal the shotlist.</h2>
+    <p class="lede">The complete director's document behind this film &mdash; free to study. See exactly how a 45-second AI spot gets written, ruled and shot.</p>
+    <div class="res">
+      <div class="res-doc"><img src="assets/bti/j-shotlist-thumb.jpg" alt="Preview of the Break the Ice director's shotlist document"></div>
+      <div>
+        <h3>The Break the Ice director's shotlist</h3>
+        <ul>
+          <li>Every scene prompt, word for word &mdash; the exact text behind every shot</li>
+          <li>The production rulebook: scale anchors, screen direction, realism language</li>
+          <li>What every failed take taught us &mdash; and how each fix worked</li>
+        </ul>
+        <form class="gate" id="gate-form">
+          <input type="email" required placeholder="you@brand.com" aria-label="Email address">
+          <button type="submit">Send me the shotlist</button>
+        </form>
+        <div class="gate-done" id="gate-done"><b>You're in.</b> <a href="assets/bti/breaktheice-directors-shotlist.pdf" download style="color:var(--gold)">Download the director's shotlist (PDF)</a> &mdash; a copy of the link is on its way to your inbox too.</div>
+        <p class="gate-note">One download link + the occasional breakdown like this one. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Everflo &mdash; AI creative studio &middot; everflo.studio</span>
+    <span>SOLA is an original brand created by Everflo as a spec campaign.</span>
+  </div>
+</footer>
+<script>
+  document.getElementById('gate-form').addEventListener('submit', async function(e){
+    e.preventDefault();
+    var form = this, btn = form.querySelector('button');
+    btn.disabled = true; btn.textContent = 'Sending…';
+    try {
+      await fetch('https://formsubmit.co/ajax/hello@everflo.studio', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+        body: JSON.stringify({
+          email: form.querySelector('input').value,
+          _subject: 'New shotlist subscriber (Break the Ice)',
+          _template: 'table',
+          _autoresponse: 'Thanks for grabbing the Break the Ice director’s shotlist. Download it here: https://everflo.studio/assets/bti/breaktheice-directors-shotlist.pdf — Hongshu Guo, Founder & Creative Director, Everflo (everflo.studio)'
+        })
+      });
+    } catch (err) {}
+    form.style.display = 'none';
+    document.getElementById('gate-done').style.display = 'block';
+  });
+</script>
+
+</body>
+</html>
