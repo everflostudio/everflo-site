@@ -112,6 +112,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .sys-ice img{aspect-ratio:1/1;object-fit:cover;width:100%;border-radius:8px;display:block}
   .sys-vert{width:100%;height:100%;object-fit:cover;border-radius:8px;display:block}
   .sys-cap{font-size:.78rem;color:var(--faint);margin-top:12px}
+  .sys-h{display:flex;align-items:center;gap:16px;margin:52px 0 6px;font-size:.8rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+  .sys-h::after{content:"";flex:1;height:1px;background:var(--line)}
+  .sys-sub{color:var(--dim);font-size:.92rem;margin:0 0 8px;max-width:60ch}
+  .sys-more{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px;max-width:680px}
+  .sys-more img{aspect-ratio:1/1;object-fit:cover;width:100%;border-radius:6px;display:block}
   .endcard{border-radius:10px;overflow:hidden;margin-top:44px;box-shadow:0 20px 60px rgba(0,0,0,.45)}
   .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}
   .tiles figure{margin:0}
@@ -274,17 +279,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap">
     <p class="eyebrow">The campaign system</p>
     <h2>One film becomes a campaign.</h2>
-    <p class="lede">Break the Ice leads a full SOLA brand system &mdash; a product-CGI hero film, a hyper-motion spot and a static campaign, all built in one world with one set of rules.</p>
+    <p class="lede">The film you just watched is the story lane &mdash; characters, suspense, a punchline. The same SOLA brand also runs a product lane. Two different kinds of craft, one campaign.</p>
+    <div class="sys-h"><span>Product CGI</span></div>
+    <p class="sys-sub">No story &mdash; pure product craft. The 12-second hero film and its 15-second hyper-motion spot.</p>
     <div class="sysvids">
       <figure>
         <video controls playsinline preload="metadata" poster="assets/bti/sola-hero-poster.jpg" src="assets/bti/sola-hero-12s.mp4"></video>
-        <figcaption>Product CGI &mdash; hero film &middot; 12s</figcaption>
+        <figcaption>Hero film &middot; 12s</figcaption>
       </figure>
       <figure>
         <video controls playsinline preload="metadata" poster="assets/bti/sola-hypermotion-poster.jpg" src="assets/bti/sola-hypermotion-15s.mp4"></video>
         <figcaption>Hyper-motion spot &middot; 15s</figcaption>
       </figure>
     </div>
+    <div class="sys-h"><span>The social kit</span></div>
+    <p class="sys-sub">The statics that carry the campaign into the feed &mdash; one visual system across every format.</p>
     <div class="sys-collage">
       <div class="sys-left">
         <img class="sys-lineup" src="assets/bti/sys-lineup.jpg" alt="SOLA flavour lineup: three cans with fruit and splashes on teal" loading="lazy">
@@ -296,7 +305,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <img class="sys-vert" src="assets/bti/sys-buoy-916.jpg" alt="Vertical hero key art: SOLA can in a lifebuoy on a glacial lake" loading="lazy">
     </div>
-    <p class="sys-cap">Flavour lineup &middot; the Frozen Fresh trilogy &middot; vertical hero key art &mdash; one world, every format.</p>
+    <div class="sys-more">
+      <img src="assets/bti/sm-campaign-1x1-05-break-the-chill.jpg" alt="Break the Chill static: can punching through ice" loading="lazy">
+      <img src="assets/bti/sm-campaign-1x1-08-glacial-tetris.jpg" alt="Glacial Tetris static: stacked ice blocks with cans" loading="lazy">
+      <img src="assets/bti/sm-campaign-1x1-09-ice-vending-machine.jpg" alt="Ice vending machine static" loading="lazy">
+      <img src="assets/bti/sm-campaign-1x1-03-color-on-snow.jpg" alt="Colour-on-snow static: blood orange can in snow" loading="lazy">
+    </div>
+    <p class="sys-cap">Flavour lineup &middot; the Frozen Fresh trilogy &middot; hero key art &middot; social one-offs &mdash; one world, every format.</p>
   
   </section>
 
