@@ -101,6 +101,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .tag{position:absolute;font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;background:rgba(10,20,34,.82);border:1px solid var(--gold);color:var(--ice);padding:5px 9px;border-radius:4px;backdrop-filter:blur(2px)}
 
   /* campaign */
+  .sysvids{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:44px}
+  .sysvids figure{margin:0}
+  .sysvids video{width:100%;aspect-ratio:16/9;border-radius:10px;background:#000;box-shadow:0 18px 50px rgba(0,0,0,.45)}
+  .sysvids figcaption{font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-top:10px}
+  .tiles-sm{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:26px}
+  .tiles-sm figure{margin:0}
+  .tiles-sm img{aspect-ratio:1/1;object-fit:cover;width:100%;border-radius:6px}
+  .tiles-sm figcaption{font-size:.68rem;color:var(--faint);margin-top:5px}
   .endcard{border-radius:10px;overflow:hidden;margin-top:44px;box-shadow:0 20px 60px rgba(0,0,0,.45)}
   .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}
   .tiles figure{margin:0}
@@ -148,6 +156,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .acts{grid-template-columns:1fr;gap:14px}
     .card{grid-template-columns:1fr}
     .tiles{grid-template-columns:repeat(2,1fr)}
+    .sysvids{grid-template-columns:1fr}
+    .tiles-sm{grid-template-columns:repeat(3,1fr)}
     .res{grid-template-columns:1fr}
     .res-doc{max-height:300px}
   }
@@ -258,19 +268,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section>
   <div class="wrap">
-    <p class="eyebrow">The system</p>
+    <p class="eyebrow">The campaign system</p>
     <h2>One film becomes a campaign.</h2>
-    <p class="lede">Break the Ice is the flagship of a full brand system &mdash; same world, same rules, rebuilt for every format that sells.</p>
-    <div class="endcard"><img src="assets/bti/j-endcard.jpg" alt="Campaign end card: three SOLA flavours &mdash; Stay Cool. Stay Sola."></div>
-    <div class="tiles">
-      <figure><img src="assets/bti/j-hero1.jpg" alt="Hero film: SOLA can in a lifebuoy on a glacial lake"><figcaption>Hero film &mdash; the lifebuoy reveal</figcaption></figure>
-      <figure><img src="assets/bti/j-campaign-1x1-02-frozen-fresh.jpg" alt="Frozen Fresh social static: can inside a block of ice"><figcaption>Frozen Fresh &mdash; social trilogy</figcaption></figure>
-      <figure><img src="assets/bti/j-breakchill.jpg" alt="Break the Chill social static: a SOLA can punching through ice with a splash"><figcaption>Break the Chill</figcaption></figure>
-      <figure><img src="assets/bti/j-campaign-1x1-09-ice-vending-machine.jpg" alt="Ice vending machine carved from a glacier"><figcaption>Nature's vending machine</figcaption></figure>
+    <p class="lede">Break the Ice leads a full SOLA brand system &mdash; a product-CGI hero film, a hyper-motion spot and a static campaign, all built in one world with one set of rules.</p>
+    <div class="sysvids">
+      <figure>
+        <video controls playsinline preload="metadata" poster="assets/bti/sola-hero-poster.jpg" src="assets/bti/sola-hero-12s.mp4"></video>
+        <figcaption>Product CGI &mdash; hero film &middot; 12s</figcaption>
+      </figure>
+      <figure>
+        <video controls playsinline preload="metadata" poster="assets/bti/sola-hypermotion-poster.jpg" src="assets/bti/sola-hypermotion-15s.mp4"></video>
+        <figcaption>Hyper-motion spot &middot; 15s</figcaption>
+      </figure>
     </div>
-    <a class="more" href="case-sola.html">Explore the full SOLA campaign system &rarr;</a>
-  </div>
-</section>
+    <div class="tiles-sm">
+      <figure><img src="assets/bti/j-campaign-1x1-03-color-on-snow.jpg" alt="Colour-on-snow static: blood orange can in the snow" loading="lazy"><figcaption>Colour on snow</figcaption></figure>
+      <figure><img src="assets/bti/j-campaign-1x1-02-frozen-fresh.jpg" alt="Frozen Fresh static: can inside a block of ice" loading="lazy"><figcaption>Frozen Fresh</figcaption></figure>
+      <figure><img src="assets/bti/j-breakchill.jpg" alt="Break the Chill static: can punching through ice" loading="lazy"><figcaption>Break the Chill</figcaption></figure>
+      <figure><img src="assets/bti/j-campaign-1x1-08-glacial-tetris.jpg" alt="Glacial Tetris static: ice blocks stacking" loading="lazy"><figcaption>Glacial Tetris</figcaption></figure>
+      <figure><img src="assets/bti/j-campaign-1x1-09-ice-vending-machine.jpg" alt="Ice vending machine static" loading="lazy"><figcaption>Nature&rsquo;s vending machine</figcaption></figure>
+      <figure><img src="assets/bti/j-campaign-1x1-04-apres-ski-cheers.jpg" alt="Apres-ski cheers static: mitten holding a can" loading="lazy"><figcaption>Apr&egrave;s-ski</figcaption></figure>
+    </div>
+  </section>
 
 <section id="shotlist">
   <div class="wrap">
