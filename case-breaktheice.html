@@ -105,10 +105,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .sysvids figure{margin:0}
   .sysvids video{width:100%;aspect-ratio:16/9;border-radius:10px;background:#000;box-shadow:0 18px 50px rgba(0,0,0,.45)}
   .sysvids figcaption{font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-top:10px}
-  .tiles-sm{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:26px}
-  .tiles-sm figure{margin:0}
-  .tiles-sm img{aspect-ratio:1/1;object-fit:cover;width:100%;border-radius:6px}
-  .tiles-sm figcaption{font-size:.68rem;color:var(--faint);margin-top:5px}
+  .sys-collage{display:grid;grid-template-columns:2fr 1fr;gap:12px;margin-top:26px;align-items:stretch}
+  .sys-left{display:flex;flex-direction:column;gap:12px}
+  .sys-lineup{width:100%;border-radius:8px;display:block}
+  .sys-ice{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .sys-ice img{aspect-ratio:1/1;object-fit:cover;width:100%;border-radius:8px;display:block}
+  .sys-vert{width:100%;height:100%;object-fit:cover;border-radius:8px;display:block}
+  .sys-cap{font-size:.78rem;color:var(--faint);margin-top:12px}
   .endcard{border-radius:10px;overflow:hidden;margin-top:44px;box-shadow:0 20px 60px rgba(0,0,0,.45)}
   .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}
   .tiles figure{margin:0}
@@ -157,7 +160,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .card{grid-template-columns:1fr}
     .tiles{grid-template-columns:repeat(2,1fr)}
     .sysvids{grid-template-columns:1fr}
-    .tiles-sm{grid-template-columns:repeat(3,1fr)}
+    .sys-collage{grid-template-columns:1fr}
+    .sys-vert{aspect-ratio:4/5;height:auto}
     .res{grid-template-columns:1fr}
     .res-doc{max-height:300px}
   }
@@ -281,14 +285,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <figcaption>Hyper-motion spot &middot; 15s</figcaption>
       </figure>
     </div>
-    <div class="tiles-sm">
-      <figure><img src="assets/bti/j-campaign-1x1-03-color-on-snow.jpg" alt="Colour-on-snow static: blood orange can in the snow" loading="lazy"><figcaption>Colour on snow</figcaption></figure>
-      <figure><img src="assets/bti/j-campaign-1x1-02-frozen-fresh.jpg" alt="Frozen Fresh static: can inside a block of ice" loading="lazy"><figcaption>Frozen Fresh</figcaption></figure>
-      <figure><img src="assets/bti/j-breakchill.jpg" alt="Break the Chill static: can punching through ice" loading="lazy"><figcaption>Break the Chill</figcaption></figure>
-      <figure><img src="assets/bti/j-campaign-1x1-08-glacial-tetris.jpg" alt="Glacial Tetris static: ice blocks stacking" loading="lazy"><figcaption>Glacial Tetris</figcaption></figure>
-      <figure><img src="assets/bti/j-campaign-1x1-09-ice-vending-machine.jpg" alt="Ice vending machine static" loading="lazy"><figcaption>Nature&rsquo;s vending machine</figcaption></figure>
-      <figure><img src="assets/bti/j-campaign-1x1-04-apres-ski-cheers.jpg" alt="Apres-ski cheers static: mitten holding a can" loading="lazy"><figcaption>Apr&egrave;s-ski</figcaption></figure>
+    <div class="sys-collage">
+      <div class="sys-left">
+        <img class="sys-lineup" src="assets/bti/sys-lineup.jpg" alt="SOLA flavour lineup: three cans with fruit and splashes on teal" loading="lazy">
+        <div class="sys-ice">
+          <img src="assets/bti/sys-ice-yuzu.jpg" alt="Frozen Fresh: yuzu + ginger can inside a block of ice" loading="lazy">
+          <img src="assets/bti/sys-ice-bloodorange.jpg" alt="Frozen Fresh: blood orange + rosemary can inside a block of ice" loading="lazy">
+          <img src="assets/bti/sys-ice-cucumber.jpg" alt="Frozen Fresh: cucumber + lime can inside a block of ice" loading="lazy">
+        </div>
+      </div>
+      <img class="sys-vert" src="assets/bti/sys-buoy-916.jpg" alt="Vertical hero key art: SOLA can in a lifebuoy on a glacial lake" loading="lazy">
     </div>
+    <p class="sys-cap">Flavour lineup &middot; the Frozen Fresh trilogy &middot; vertical hero key art &mdash; one world, every format.</p>
+  
   </section>
 
 <section id="shotlist">
